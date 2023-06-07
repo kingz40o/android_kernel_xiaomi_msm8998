@@ -3,7 +3,7 @@ PATCHLEVEL = 4
 SUBLEVEL = 302
 EXTRAVERSION =
 NAME = Blurry Fish Butt
-
+CFLAGS += -Wno-declaration-after-statement
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
 # More info can be located in ./README
