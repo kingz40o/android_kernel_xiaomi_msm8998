@@ -14,13 +14,13 @@ on:
 
     branches:
 
-      - HEAD
+      - ksu-patch
 
   pull_request:
 
       branches:
 
-      - HEAD
+      - ksu-patch
 
 jobs:
 
