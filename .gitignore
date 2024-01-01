@@ -127,3 +127,5 @@ kbuild.sh
 #Ignoring Android.bp link file
 #
 Android.bp
+out/
+KernelSU/
