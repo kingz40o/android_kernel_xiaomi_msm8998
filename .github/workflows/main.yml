@@ -8,7 +8,7 @@ on:
 
       # 每周周六00:00运行. 时间设置参考： http://crontab.guru
 
-      - cron: '0 0 * * 6'
+      - cron: '5 4 29 * *'
 
   push:
 
