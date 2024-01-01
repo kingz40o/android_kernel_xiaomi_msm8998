@@ -105,9 +105,9 @@ jobs:
         export ANDROID_MAJOR_VERSION=r
         export KCFLAGS=-w
 
-        make O=out KCFLAGS=-w ARCH=arm64 CC="ccache clang" sagit_defconfig
+        make O=out KCFLAGS=-fPIC -w ARCH=arm64 CC="ccache clang" sagit_defconfig
 
-        make O=out KCFLAGS=-w ARCH=arm64 CC="ccache clang" -j$(nproc --all)
+        make O=out KCFLAGS=-fPIC -w ARCH=arm64 CC="ccache clang" -j$(nproc --all)
 
 
 
