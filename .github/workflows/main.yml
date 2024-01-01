@@ -14,13 +14,13 @@ on:
 
     branches:
 
-      - HEAD
+      - ksu-patch
 
   pull_request:
 
       branches:
 
-      - HEAD
+      - ksu-patch
 
 jobs:
 
@@ -38,7 +38,7 @@ jobs:
 
       CCACHE_HARDLINK: "true"
 
-      KERNEL_DEFCONFIG: "a10s_defconfig"
+      KERNEL_DEFCONFIG: "sagit_defconfig"
 
       KERNEL_CMDLINE: "ARCH=arm64 CC=clang CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-gnu- CROSS_COMPILE_ARM32=arm-linux-gnueabi- O=out"
 
@@ -105,7 +105,7 @@ jobs:
         export ANDROID_MAJOR_VERSION=r
         export KCFLAGS=-w
 
-        make O=out KCFLAGS=-w ARCH=arm64 CC="ccache clang" a10s_defconfig
+        make O=out KCFLAGS=-w ARCH=arm64 CC="ccache clang" sagit_defconfig
 
         make O=out KCFLAGS=-w ARCH=arm64 CC="ccache clang" -j$(nproc --all)
 
